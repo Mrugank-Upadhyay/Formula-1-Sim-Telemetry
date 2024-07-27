@@ -16,8 +16,15 @@
       devShells.default = pkgs.mkShell {
         packages = with pkgs; [
           # Add packages here as required.
+          python312Packages.jupyter
           (python3.withPackages (p: with p; [
             matplotlib
+            numpy
+            pandas
+            pip
+            jupyter
+            jupyterlab
+            notebook
           ]))
         ];
       };
