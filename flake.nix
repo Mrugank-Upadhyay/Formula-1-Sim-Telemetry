@@ -53,6 +53,7 @@
             notebook
             tabulate
             pandarallel
+            ipympl
           ]))
         ];
       };
